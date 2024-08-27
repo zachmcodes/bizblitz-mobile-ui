@@ -10,12 +10,10 @@ import SwiftUI
 struct SplashView: View {
     
     @State private var isActive: Bool = false
-    @StateObject private var loginViewModel = LoginViewModel()
     
     var body: some View {
         if isActive {
             ContentView()
-                .environmentObject(loginViewModel)
         } else {
             VStack {
                 ZStack {

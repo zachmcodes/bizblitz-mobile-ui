@@ -12,7 +12,7 @@ struct BizBlitzApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashView()
         }
     }
 }
