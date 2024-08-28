@@ -10,12 +10,12 @@ import Foundation
 class LoginService {
     
     func fetchLoginAuthentication(username: String, password: String, completion: @escaping (Result<String, Error>) -> Void) {
-        print("login called")
-        let baseURL = "http://localhost:8000/"
-        guard let url = URL(string: "\(baseURL)api/auth/login") else {
+        let baseURL = "http://localhost:8082"
+        guard let url = URL(string: "\(baseURL)/api/bff/users/login") else {
             completion(.failure(NetworkError.invalidURL))
             return
         }
+        
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")

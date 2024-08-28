@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             if loginViewModel.isLoginSuccess {
-                LandingView(landingViewModel: landingViewModel)
+                LandingView(landingViewModel: landingViewModel, username: loginViewModel.username)
                     .navigationBarTitleDisplayMode(.inline)
                     .toolbar {
                         ToolbarItem(placement: .principal) {

@@ -10,8 +10,8 @@ import Foundation
 class RegisterService {
     
     func registerUser(username: String, email: String, password: String, completion: @escaping (Result<String, Error>) -> Void) {
-        let baseURL = "http://localhost:8000/"
-        guard let url = URL(string: "\(baseURL)api/users/register") else {
+        let baseURL = "http://localhost:8082"
+        guard let url = URL(string: "\(baseURL)/api/bff/users/register") else {
             completion(.failure(NetworkError.invalidURL))
             return
         }
@@ -30,10 +30,6 @@ class RegisterService {
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {
                 completion(.failure(error))
-                return
-            }
-            if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode != 200 {
-                completion(.failure(NetworkError.requestFailed(error!)))
                 return
             }
             if let data = data, let responseString = String(data: data, encoding: .utf8) {

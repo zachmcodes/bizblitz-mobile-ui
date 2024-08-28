@@ -10,10 +10,15 @@ import SwiftUI
 struct LandingView: View {
     @ObservedObject var landingViewModel: LandingViewModel
     @EnvironmentObject var loginViewModel: LoginViewModel
+    var username: String
     
     var body: some View {
         VStack {
             Divider()
+            Text("Hello \(username),")
+                .font(.system(size: 22))
+                .foregroundColor(Color(red: 0, green: 0, blue: 0.5))
+                .fontWeight(.bold)
             Text("Find healthcare providers near you!")
                 .foregroundColor(Color(red: 0, green: 0, blue: 0.5))
                 .font(.headline)
