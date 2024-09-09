@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct PTView: View {
+    @EnvironmentObject var loginViewModel: LoginViewModel
+    
     @StateObject var ptViewModel: PTViewModel
     
     var body: some View {
@@ -18,7 +20,7 @@ struct PTView: View {
                       allReviews: String(PTData(businesses: ptViewModel.businesses).totalReviews))
             
             List(ptViewModel.businesses) { business in
-                NavigationLink(destination: PTDetailView(business: business)) {
+                NavigationLink(destination: PTDetailView(business: business).environmentObject(loginViewModel)) {
                     HStack(alignment: .top) {
                         VStack {
                             Text("Business:")

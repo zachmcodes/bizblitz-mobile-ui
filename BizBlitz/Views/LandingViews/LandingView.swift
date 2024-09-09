@@ -58,7 +58,7 @@ struct LandingView: View {
                     }
             }
             Divider()
-            NavigationLink(destination: PTView(ptViewModel: landingViewModel.ptViewModel), isActive: $landingViewModel.shouldTransit) {
+            NavigationLink(destination: PTView(ptViewModel: landingViewModel.ptViewModel).environmentObject(loginViewModel), isActive: $landingViewModel.shouldTransit) {
                 ZStack {
                     Capsule()
                         .frame(width: 150, height: 50)

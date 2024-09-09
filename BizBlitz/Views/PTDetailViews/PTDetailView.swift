@@ -9,6 +9,7 @@ import SwiftUI
 import MapKit
 
 struct PTDetailView: View {
+    @EnvironmentObject var loginViewModel: LoginViewModel
     
     let business: Business
     
@@ -17,7 +18,7 @@ struct PTDetailView: View {
             MapView(business: business)
             BusinessCardView(business: business)
                 .offset(y: -40)
-            HoursView(business: business)
+            ReviewView(business: business)
         }
         .frame(maxHeight: .infinity, alignment: .top)
         .toolbar {

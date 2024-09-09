@@ -36,6 +36,10 @@
 		8BD9CBF02C7D0FA500E0F161 /* RegisterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD9CBEF2C7D0FA500E0F161 /* RegisterService.swift */; };
 		8BD9CBF42C7D112800E0F161 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD9CBF32C7D112800E0F161 /* RegisterView.swift */; };
 		8BD9CBF62C7D116B00E0F161 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD9CBF52C7D116B00E0F161 /* RegisterViewModel.swift */; };
+		8BD9CBF92C8F26D700E0F161 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD9CBF82C8F26D700E0F161 /* ReviewView.swift */; };
+		8BD9CBFB2C8F4F9A00E0F161 /* ReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD9CBFA2C8F4F9A00E0F161 /* ReviewService.swift */; };
+		8BD9CBFD2C8F529400E0F161 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD9CBFC2C8F529400E0F161 /* User.swift */; };
+		8BD9CBFF2C8F55DC00E0F161 /* ReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD9CBFE2C8F55DC00E0F161 /* ReviewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +73,10 @@
 		8BD9CBEF2C7D0FA500E0F161 /* RegisterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterService.swift; sourceTree = "<group>"; };
 		8BD9CBF32C7D112800E0F161 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		8BD9CBF52C7D116B00E0F161 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		8BD9CBF82C8F26D700E0F161 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		8BD9CBFA2C8F4F9A00E0F161 /* ReviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewService.swift; sourceTree = "<group>"; };
+		8BD9CBFC2C8F529400E0F161 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8BD9CBFE2C8F55DC00E0F161 /* ReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +97,7 @@
 				8BBF81C42C7CDA8900571706 /* LoginViewModel.swift */,
 				8BBF81C62C7CF52D00571706 /* LandingViewModel.swift */,
 				8BD9CBF52C7D116B00E0F161 /* RegisterViewModel.swift */,
+				8BD9CBFE2C8F55DC00E0F161 /* ReviewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -110,6 +119,7 @@
 				8B9B7D332B4846AA00DB55DB /* PTService.swift */,
 				8BBF81BC2C7CCE3200571706 /* LoginService.swift */,
 				8BD9CBEF2C7D0FA500E0F161 /* RegisterService.swift */,
+				8BD9CBFA2C8F4F9A00E0F161 /* ReviewService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -129,8 +139,7 @@
 				8B9B7D392B48471000DB55DB /* PTDetailView.swift */,
 				8B6F25602C778F1B0084A1E4 /* BusinessCardView.swift */,
 				8B47113F2C77CB5A00B74AE5 /* HoursView.swift */,
-				8B47113D2C77C6D600B74AE5 /* MapView.swift */,
-				8B275EA52C7515DB0059F7EF /* RatingView.swift */,
+				8BD9CBF82C8F26D700E0F161 /* ReviewView.swift */,
 			);
 			path = PTDetailViews;
 			sourceTree = "<group>";
@@ -179,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				8B9B7D312B48469F00DB55DB /* PTData.swift */,
+				8BD9CBFC2C8F529400E0F161 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -201,6 +211,8 @@
 				8B9B7D3B2B48471D00DB55DB /* PTWebView.swift */,
 				8B9B7D3D2B48472900DB55DB /* PTSiteView.swift */,
 				8B9B7D3F2B48473800DB55DB /* SplashView.swift */,
+				8B275EA52C7515DB0059F7EF /* RatingView.swift */,
+				8B47113D2C77C6D600B74AE5 /* MapView.swift */,
 			);
 			path = UtilityViews;
 			sourceTree = "<group>";
@@ -300,23 +312,27 @@
 				8B9B7D322B48469F00DB55DB /* PTData.swift in Sources */,
 				8B275EA62C7515DB0059F7EF /* RatingView.swift in Sources */,
 				8B9B7D222B47DCAF00DB55DB /* App.swift in Sources */,
+				8BD9CBFD2C8F529400E0F161 /* User.swift in Sources */,
 				8BBF81BD2C7CCE3200571706 /* LoginService.swift in Sources */,
 				8BBF81C32C7CD81600571706 /* LoginView.swift in Sources */,
 				8BBF81C72C7CF52D00571706 /* LandingViewModel.swift in Sources */,
 				8B47113E2C77C6D600B74AE5 /* MapView.swift in Sources */,
 				8BBF81C12C7CD5F100571706 /* LandingView.swift in Sources */,
 				8B6F25532C775DCE0084A1E4 /* K.swift in Sources */,
+				8BD9CBFB2C8F4F9A00E0F161 /* ReviewService.swift in Sources */,
 				8B9B7D3A2B48471000DB55DB /* PTDetailView.swift in Sources */,
 				8BD9CBF42C7D112800E0F161 /* RegisterView.swift in Sources */,
 				8BD9CBF62C7D116B00E0F161 /* RegisterViewModel.swift in Sources */,
 				8B9B7D362B4846C200DB55DB /* PTViewModel.swift in Sources */,
 				8B9B7D382B4846E700DB55DB /* PTView.swift in Sources */,
 				8B9B7D402B48473800DB55DB /* SplashView.swift in Sources */,
+				8BD9CBF92C8F26D700E0F161 /* ReviewView.swift in Sources */,
 				8B6F255E2C7784770084A1E4 /* Utilites.swift in Sources */,
 				8BD9CBF02C7D0FA500E0F161 /* RegisterService.swift in Sources */,
 				8B4711402C77CB5A00B74AE5 /* HoursView.swift in Sources */,
 				8B9B7D342B4846AA00DB55DB /* PTService.swift in Sources */,
 				8B6F25612C778F1B0084A1E4 /* BusinessCardView.swift in Sources */,
+				8BD9CBFF2C8F55DC00E0F161 /* ReviewViewModel.swift in Sources */,
 				8B9B7D422B4C49C100DB55DB /* CustomModifiers.swift in Sources */,
 				8B9B7D3C2B48471D00DB55DB /* PTWebView.swift in Sources */,
 			);

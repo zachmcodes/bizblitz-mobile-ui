@@ -27,7 +27,6 @@ class LoginViewModel: ObservableObject {
             return
         }
         
-        // Ensure this function is not re-triggered if login is already successful
         guard !isLoginSuccess else {
             print("Already logged in, skipping login process.")
             return
