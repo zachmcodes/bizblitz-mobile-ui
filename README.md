@@ -3,7 +3,7 @@ Mobile UI
 
 Overview
 
-The mobile-ui is a SwiftUI-based mobile application designed to interact with the backend services such as login-api, review-api, and bff-api. It allows users to search for businesses, log in, view business details, and submit reviews.
+The mobile-ui is a SwiftUI-based mobile application designed to interact with the backend services such as login-api, review-api, and bff-api. It allows users to search for businesses, log in, view business details, and submit reviews. I utilized YelpAPI and google resources to create a project to showcase architectural design from backend, storage, internal and external api consolidation into a backend-for-frontend to ensure the client and backend are safely separated.
 
 Features
 
