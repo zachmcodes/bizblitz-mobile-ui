@@ -5,6 +5,13 @@ Overview
 
 The mobile-ui is a SwiftUI-based mobile application designed to interact with the backend services such as login-api, review-api, and bff-api. It allows users to search for businesses, log in, view business details, and submit reviews. I utilized YelpAPI and google resources to create a project to showcase architectural design from backend, storage, internal and external api consolidation into a backend-for-frontend to ensure the client and backend are safely separated.
 
+This project demonstrates API integration with the Yelp Fusion API. It fetches restaurant data based on user queries.
+
+> Powered by Yelp.
+
+This project is for educational purposes only and not intended for commercial use.
+
+
 Features
 
     •    User authentication.
